@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white shadow mb-4">
+      <div class="container-fluid py-2">
+        <a class="navbar-brand" href="/">Car Garage</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cars.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register.html">Register</a>
+            </li>
+          </ul>
+
+          <!-- Search -->
+          <div class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              id="navbar-search-input"
+              placeholder="Search"
+            />
+            <a
+              href="/cars.html"
+              id="navbar-search-button"
+              class="btn btn-primary"
+              >Search</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- <section>
+      <div class="main" id="Home">
+        <div class="main_content">
+          <div class="main_text">
+            <h1>Car<br /><span>Collection</span></h1>
+            <p>
+            </p>
+          </div>
+          <div class="main_image">
+            <img src="./assets/images/bg2.jpg" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="social_icon">
+          <i class="fa-brands fa-facebook-f"></i><br />
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="button">
+          <a href="#">BOOKING NOW</a>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Login Form -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Login</h3>
+            </div>
+            <div class="card-body">
+              <form action="/login" method="post">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    placeholder="Enter password"
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="rememberMe"
+                    name="remember_me"
+                  />
+                  <label class="form-check-label" for="rememberMe"
+                    >Remember me</label
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary">Sign In</button>
+                <a href="/forgot-password" class="link-secondary"
+                  >Forgot password?</a
+                >
+              </form>
+            </div>
+
+            <div class="card-footer">
+              Haven't have an account?
+              <a href="/register.html">Register an account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="bg-light mt-5 p-5">
+      <div class="container">
+        <div class="row gap-4 justify-between">
+          <div class="col-md">
+            <div class="d-flex gap-2 flex-column">
+              <h4>Contact</h4>
+              <a href="#" class="text-black"
+                ><i class="fa-solid fa-house"></i>RUPP/PP/CAMBODIA</a
+              >
+              <a href="#" class="text-black"
+                ><i class="fa-solid fa-phone"></i>+855 99304367</a
+              >
+              <a href="#" class="text-black"
+                ><i class="fa-solid fa-envelope"></i>Nak168@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="d-flex gap-2 flex-column">
+              <h4>Get Help</h4>
+              <a href="#" class="text-black">FAQ</a>
+              <a href="#" class="text-black">Shipping</a>
+              <a href="#" class="text-black">Returns</a>
+              <a href="#" class="text-black">Payment Options</a>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="d-flex gap-2 flex-column">
+              <h4>Our Garage</h4>
+              <a href="#" class="text-black">Cambodia</a>
+              <a href="#" class="text-black">USA</a>
+              <a href="#" class="text-black">China</a>
+              <a href="#" class="text-black">Japan</a>
+            </div>
+          </div>
+
+          <div class="tag col-md">
+            <h4>Follow Us</h4>
+            <div class="social_link">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

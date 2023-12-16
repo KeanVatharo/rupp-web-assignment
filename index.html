@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white shadow mb-4">
+      <div class="container-fluid py-2">
+        <a class="navbar-brand" href="/">Car Garage</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cars.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register.html">Register</a>
+            </li>
+          </ul>
+
+          <!-- Search -->
+          <div class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              id="navbar-search-input"
+              placeholder="Search"
+            />
+            <a
+              href="/cars.html"
+              id="navbar-search-button"
+              class="btn btn-primary"
+              >Search</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- <section>
+      <div class="main" id="Home">
+        <div class="main_content">
+          <div class="main_text">
+            <h1>Car<br /><span>Collection</span></h1>
+            <p>
+            </p>
+          </div>
+          <div class="main_image">
+            <img src="./assets/images/bg2.jpg" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="social_icon">
+          <i class="fa-brands fa-facebook-f"></i><br />
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="button">
+          <a href="#">BOOKING NOW</a>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </section> -->
+
+    <!--Products-->
+    <div class="container">
+      <div class="" id="Products">
+        <h1 class="text-center mb-4">Car In-Stock</h1>
+
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
+          id="data-container"
+        >
+          <!-- cars inject here -->
+        </div>
+      </div>
+    </div>
+
+    <!--About-->
+    <div class="container">
+      <div class="about" id="About">
+        <h1 class="text-center">About Car</h1>
+
+        <div
+          class="about_main d-flex gap-2 align-items-center justify-content-center"
+        >
+          <div class="about_image">
+            <div class="about_small_image">
+              <img src="./assets/images/STO3.jpg" onclick="functio(this)" />
+              <img src="./assets/images/STO1.jpg" onclick="functio(this)" />
+              <img src="./assets/images/STO2.jpg" onclick="functio(this)" />
+              <img src="./assets/images/STO4.jpg" onclick="functio(this)" />
+            </div>
+
+            <div class="image_contaner">
+              <img src="./assets/images/STO.jpg" id="imagebox" />
+            </div>
+          </div>
+
+          <div class="about_text">
+            <p>
+              A super-sports car created with a singular purpose, the Huracán
+              STO delivers all the feel and technology of a genuine race car in
+              a road-legal model. Lamborghini’s years-long motorsport know-how,
+              intensified by a winning heritage, is concentrated in the new
+              Huracán STO. Its extreme aerodynamics, track-honed handling
+              dynamics, lightweight contents and the highest-performing V10
+              engine to date come together, ready to trigger all the emotions of
+              the racetrack in your everyday life.
+            </p>
+          </div>
+        </div>
+
+        <a href="#" class="about_btn">Shop Now</a>
+      </div>
+    </div>
+
+    <!--Review-->
+    <div class="container" id="Review">
+      <h1 class="text-center mb-4">Customer's Feedbacks</h1>
+      <div
+        class="row row-cols-md-3 g-4 align-items-center"
+        id="feedbacks-container"
+      >
+        <!-- Feedbacks will inject here  -->
+      </div>
+    </div>
+
+    <!--Services-->
+    <div class="services container" id="Servises">
+      <h1 class="mb-4">Our Services</h1>
+
+      <div class="row">
+        <div class="">
+          <i class="fa-solid fa-truck-fast fa-3x text-warning mb-3"></i>
+          <h4 class="fw-bold">Fast Delivery</h4>
+          <p>
+            We understand car problems are urgent. Order your car parts or
+            accessories online, and enjoy same-day or next-day delivery to most
+            locations. No more waiting days or endless trips to the store!
+          </p>
+        </div>
+
+        <div class="">
+          <i class="fa-solid fa-rotate-left fa-3x text-warning mb-3"></i>
+          <h4 class="fw-bold">7 Days Replacement</h4>
+          <p>
+            Worried about getting the wrong part or having it arrive damaged?
+            Relax, we offer a hassle-free 7-day replacement policy. Simply
+            return the item in its original packaging and get a replacement sent
+            out promptly. Peace of mind is just a click away!
+          </p>
+        </div>
+
+        <div class="">
+          <i class="fa-solid fa-headset fa-3x text-warning mb-3"></i>
+          <h4 class="fw-bold">24 x 7 Support</h4>
+          <p>
+            Car troubles don't keep office hours. That's why our friendly and
+            knowledgeable team is available 24 hours a day, 7 days a week.
+            Whether it's a quick question about a part or troubleshooting a
+            tricky repair, we're always here to guide you.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="bg-light mt-5 p-5">
+      <div class="container">
+        <div class="row gap-4 justify-between">
+          <div class="col-md">
+            <div class="d-flex gap-2 flex-column">
+              <h4>Contact</h4>
+              <a href="#" class="text-black"
+                ><i class="fa-solid fa-house"></i>RUPP/PP/CAMBODIA</a
+              >
+              <a href="#" class="text-black"
+                ><i class="fa-solid fa-phone"></i>+855 99304367</a
+              >
+              <a href="#" class="text-black"
+                ><i class="fa-solid fa-envelope"></i>Nak168@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="d-flex gap-2 flex-column">
+              <h4>Get Help</h4>
+              <a href="#" class="text-black">FAQ</a>
+              <a href="#" class="text-black">Shipping</a>
+              <a href="#" class="text-black">Returns</a>
+              <a href="#" class="text-black">Payment Options</a>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="d-flex gap-2 flex-column">
+              <h4>Our Garage</h4>
+              <a href="#" class="text-black">Cambodia</a>
+              <a href="#" class="text-black">USA</a>
+              <a href="#" class="text-black">China</a>
+              <a href="#" class="text-black">Japan</a>
+            </div>
+          </div>
+
+          <div class="tag col-md">
+            <h4>Follow Us</h4>
+            <div class="social_link">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const container = document.getElementById("data-container");
+      const feedBacksContainer = document.getElementById("feedbacks-container");
+
+      // Fetch the data from data.json
+      fetch("./assets/js/data.json")
+        .then((response) => response.json())
+        .then((data) => {
+          data.cars.forEach((car) => {
+            container.appendChild(createCarElement(car));
+          });
+
+          data.feedbacks.forEach((feedback) => {
+            feedBacksContainer.appendChild(createFeedbackElement(feedback));
+          });
+
+          // Initial call to filter and display cars
+        })
+        .catch((error) => console.error(error));
+
+      function createCarElement(car) {
+        const element = document.createElement("div");
+        // element.setAttribute("class", "col-sm");
+        element.innerHTML = `
+                  <div class="card">
+                    <img
+                      src="${car.photo_url}"
+                      class="card-img-top"
+                    />
+
+                    <div class="card-body">
+                      <h5>${car.brand} ${car.model}</h5>
+                      <p class="text-truncate">${car.description}</p>
+                      <p class="fw-bold">$${car.price}</p>
+                      <div class="text-warning">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <a href="/add-to-cart.html" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                  </div>
+                  `;
+
+        return element;
+      }
+
+      function createFeedbackElement(feedback) {
+        const element = document.createElement("div");
+        // element.setAttribute("class", "col-sm");
+        element.innerHTML = `
+                  <div class="col shadow p-4 rounded">
+            <div class="d-flex gap-3 mb-4">
+              <img
+                src="${feedback.photo_url}"
+                class="rounded-circle"
+                width="60"
+                height="60"
+              />
+
+              <div>
+                <h5 class="fw-bold">${feedback.name}</h5>
+                <i class="fa-solid text-warning fa-star"></i>
+                <i class="fa-solid text-warning fa-star"></i>
+                <i class="fa-solid text-warning fa-star"></i>
+                <i class="fa-solid text-warning fa-star"></i>
+                <i class="fa-solid text-warning fa-star-half-stroke"></i>
+              </div>
+            </div>
+
+            <p class="m-0">${feedback.description}</p>
+          </div>
+                  `;
+
+        return element;
+      }
+    </script>
+  </body>
+</html>

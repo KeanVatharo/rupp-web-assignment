@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white shadow">
+      <div class="container-fluid py-2">
+        <a class="navbar-brand" href="/">Car Garage</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cars.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register.html">Register</a>
+            </li>
+          </ul>
+
+          <!-- Search -->
+          <div class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              id="navbar-search-input"
+              placeholder="Search"
+            />
+            <a
+              href="/cars.html"
+              id="navbar-search-button"
+              class="btn btn-primary"
+              >Search</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-primary text-white py-3">
+      <div class="container">
+        <h1 class="display-4 mb-0">BuyCar24</h1>
+        <p class="lead">Trusted solutions for all your needs.</p>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <h2 class="mb-4">Our Services</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-wrench"></i> &nbsp; General Repair &
+                Maintenance
+              </h5>
+              <p class="card-text">
+                We offer comprehensive maintenance and repair services to keep
+                your equipment running smoothly and efficiently.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-microscope"></i> &nbsp; Diagnostics &
+                Troubleshooting
+              </h5>
+              <p class="card-text">
+                Our skilled technicians can diagnose and troubleshoot any issue
+                you're facing to get you back on track quickly.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-rocket"></i> &nbsp; Performance Optimization
+              </h5>
+              <p class="card-text">
+                We can optimize your equipment's performance for improved
+                efficiency, productivity, and cost savings.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-car-crash"></i> &nbsp; Collision Repair &
+                Paintwork
+              </h5>
+              <p class="card-text">
+                Get your car back to its pristine condition after an accident
+                with our expert collision repair and high-quality paintwork
+                services.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-balance-scale-left"></i> &nbsp; Wheel Alignment
+                & Balancing
+              </h5>
+              <p class="card-text">
+                Ensure optimal driving performance, safety, and tire longevity
+                with our precise wheel alignment and balancing services.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-spa"></i> &nbsp; Interior & Exterior Detailing
+              </h5>
+              <p class="card-text">
+                Restore your car's shine and enhance its value with our
+                professional interior and exterior detailing services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

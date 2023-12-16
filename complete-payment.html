@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Payment - Drive Away Soon!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container pt-5">
+      <h1>Finalize Your Purchase</h1>
+      <hr />
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h4>Order Summary</h4>
+          <ul class="list-unstyled">
+            <li><b>Car:</b> [Car Brand] [Car Model]</li>
+            <li><b>Price:</b> $[Car price]</li>
+            <li><b>Delivery:</b> [Delivery option and cost]</li>
+            <li><b>Total:</b> $[Total cost]</li>
+          </ul>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h4>Billing Information</h4>
+          <p>[Name] - [Email] - [Address] - [Phone]</p>
+        </div>
+      </div>
+
+      <h4>Choose Your Payment Method</h4>
+      <div class="d-flex flex-wrap gap-3 mb-4">
+        <div class="card p-3 shadow-sm">
+          <img
+            src="images/payment-methods/credit-card.svg"
+            alt="Credit Card"
+            class="img-fluid mb-2"
+          />
+          <p class="mb-0">Pay with Credit or Debit Card</p>
+          <button
+            type="button"
+            class="btn btn-primary mt-2"
+            data-bs-toggle="modal"
+            data-bs-target="#creditCardModal"
+          >
+            Pay Securely
+          </button>
+        </div>
+        <div class="card p-3 shadow-sm">
+          <img
+            src="images/payment-methods/paypal.svg"
+            alt="PayPal"
+            class="img-fluid mb-2"
+          />
+          <p class="mb-0">Securely Pay with PayPal</p>
+          <button
+            type="button"
+            class="btn btn-primary mt-2"
+            onclick="window.location.href='https://www.paypal.com/checkout'"
+          >
+            Pay with PayPal
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="creditCardModal"
+        tabindex="-1"
+        aria-labelledby="creditCardModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="creditCardModalLabel">
+                Pay with Credit/Debit Card
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form id="creditCardForm">
+                <div class="mb-3">
+                  <label for="cardNumber" class="form-label">Card Number</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cardNumber"
+                    name="cardNumber"
+                    placeholder="**** **** **** ****"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="cardName" class="form-label"
+                    >Cardholder Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cardName"
+                    name="cardName"
+                    required
+                  />
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="expiryMonth" class="form-label"
+                      >Expiry Month</label
+                    >
+                    <select
+                      class="form-select"
+                      id="expiryMonth"
+                      name="expiryMonth"
+                      required
+                    >
+                      <option value="">Select Month</option>
+                      <option value="01">January</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="expiryYear" class="form-label"
+                      >Expiry Year</label
+                    >
+                    <select
+                      class="form-select"
+                      id="expiryYear"
+                      name="expiryYear"
+                      required
+                    >
+                      <option value="">Select Year</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="cvv" class="form-label">CVV</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cvv"
+                    name="cvv"
+                    placeholder="***"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">Pay Now</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <p class="text-muted">
+                Your payment information is securely encrypted.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
